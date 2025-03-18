@@ -12,10 +12,10 @@ body {
 
 header {
     
-    width: 100%;
+   width: 100%;
     text-align: center;
     padding: 20px 0;
-    background: #32385e46;
+    background: rgba(50, 56, 94, 0.8);  /* Fondo oscuro con opacidad */
     color: white;
 }
 
@@ -28,19 +28,19 @@ header {
 }
 
 h1 {
-    font-family: 'RetroBlocky', sans-serif;
-    font-size: 7rem;
+   font-family: 'RetroBlocky', sans-serif;
+    font-size: 10rem;  
     font-weight: bold;
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     background-size: 400% 100%;
     -webkit-background-clip: text;
-    animation: rainbow 4s linear infinite, glow 1s ease-in-out alternate;
     color: transparent;
+    animation: rainbow 4s linear infinite, glow 1s ease-in-out alternate; 
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.5), 0 0 45px rgba(255, 0, 0, 0.3); 
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
-    animation: rainbow 5s linear infinite;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    margin: 0;
+    text-align: center;
 }
 
 @keyframes glow {
@@ -115,9 +115,11 @@ nav ul li a {
 }
 
 table {
-    width: 80%;
+     width: 80%;
     border-collapse: collapse;
     margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo oscuro con opacidad */
+    border: 1px solid white;
 }
 
 table, th, td {
@@ -127,8 +129,10 @@ table, th, td {
     color: white;
 }
 
-th {
-    background-color: #444;
+th {   background-color: rgba(68, 68, 68, 0.8);
+}
+td {
+    background-color: rgba(0, 0, 0, 0.5);  
 }
 
 footer {
